@@ -55,7 +55,7 @@
   white-space: nowrap;
 
   &--lg {
-    padding-right: 5em;
+    padding-right: 2em;
     font-weight: 700;
   }
 }
@@ -78,7 +78,7 @@
     cursor: pointer;
     transition: all 0.2s ease;
     font-size: 1.2em;
-    z-index: 1000;
+    z-index: 1001; // Higher than nav button to ensure it's always on top
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     
     .theme-switcher__icon {
@@ -102,11 +102,48 @@
       transform: translateY(-50%) scale(0.95);
     }
 
-    @include breakpoint($small) {
+    // Dark theme styles
+    [data-theme="dark"] & {
+      border-color: $dark-border-color;
+      background: $dark-card-background;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      
+      &:hover {
+        background-color: lighten($dark-card-background, 10%);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    // Mobile breakpoint: avoid overlap with hamburger menu
+    @include breakpoint(max-width $medium - 1px) {
+      right: 58px; // Move left to avoid hamburger menu button (accounting for button padding)
       width: 38px;
       height: 38px;
       font-size: 1em;
-      right: 15px;
+    }
+
+    // Very small screens: further adjustments for better spacing
+    @include breakpoint(max-width $small - 1px) {
+      right: 52px;
+      width: 34px;
+      height: 34px;
+      font-size: 0.9em;
+    }
+
+    // Extra small screens (phones in portrait)
+    @include breakpoint(max-width 480px) {
+      right: 50px;
+      width: 32px;
+      height: 32px;
+      font-size: 0.85em;
+    }
+
+    // Medium and larger screens: keep original positioning at page right edge
+    @include breakpoint($medium) {
+      right: 10px;
+      width: 42px;
+      height: 42px;
+      font-size: 1.2em;
     }
   }
 }
