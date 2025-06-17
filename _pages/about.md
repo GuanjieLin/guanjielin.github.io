@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "Guanjie LIN"
 excerpt: ""
 author_profile: true
 redirect_from: 
@@ -17,42 +17,57 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+I am Guanjie Lin, currently a first-year PhD student in Computer Science at the University of Massachusetts Boston (UMass Boston), under the mentorship of Prof. Yinxin Wan. I received my Bachelor of Engineering degree in Computer Science from Foshan University(China) in June 2024. Previously, I served as a Research Intern at the Shenzhen Key Lab for ICN and Blockchain Technologies (ICNLAB), Shenzhen Graduate School, Peking University, mentored by Prof. Kai Lei from December 2021 through most of my undergraduate studies.
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+My primary research interests include Future Internet architectures, blockchain technology, software security related to Large Language Models (LLMs), and network systems.
 
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2025.01*: &nbsp;🎉🎉 I am excited to join UMass Boston and begin my PhD journey, working closely with Prof. Yinxin Wan. 
+
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+#### [Blockchain-based cooperative game bilateral matching architecture for shared storage](https://doi.org/10.1016/j.future.2024.04.016)
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div>
+**Guanjie Lin**, Mingyuan Zeng, Zhiguang Shan, Kaishun Wu, Guan Wang, Kai Lei
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+*Future Generation Computer Systems*
 
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+
+
+#### [Measuring the consistency between data and control plane in SDN](https://ieeexplore.ieee.org/abstract/document/9854881/)
+
+Kai Lei, **Guanjie Lin**, Meimei Zhang, Keke Li, Qi Li, Xiaojun Jing, Peng Wang
+
+*IEEE/ACM Transactions on Networking*
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2025.01 - now*, **Ph.D.** in Computer Science
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+  University of Massachusetts Boston
 
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *2020.09 - 2024.06*, **B.E.** in Computer Science
+
+  Foshan University
+
+# 💻 EXPERIENCE
+
+| Computer Science Department, University of Massachusetts Boston | Jan 2025 – Now        |
+| ------------------------------------------------------------ | --------------------- |
+| **Teaching Assistant & Research Assistant**                  | Boston, United States |
+
+| Shenzhen Key Lab for ICN and Blockchain Technologies([ICNLAB](http://www.icnlab.cn/)), Shenzhen Graduate School, Peking University | Dec 2021 – Sept 2024 |
+| ------------------------------------------------------------ | -------------------- |
+| **Research Intern**                                          | Shenzhen, China      |
+
+
+
+# 🎖 Honors and Awards
+
+- *2023.12* **🥈Silver Award at the 2023 Web 3.0 Innovation Hackathon** , Hong Kong, China
+
+  
+
