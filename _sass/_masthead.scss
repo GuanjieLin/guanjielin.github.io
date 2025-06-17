@@ -34,7 +34,6 @@
 }
 
 .masthead__menu {
-
   ul {
     margin: 0;
     padding: 0;
@@ -61,40 +60,54 @@
   }
 }
 
-/* Theme toggle button */
-.greedy-nav .theme-toggle {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: 1px solid $border-color;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: $global-transition;
-  font-size: 1.2em;
-  z-index: 10;
-  
-  &:hover {
-    background-color: $lighter-gray;
-    transform: translateY(-50%) scale(1.1);
-  }
-  
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba($info-color, 0.3);
-  }
+/* Independent Theme Switcher */
+.masthead__inner-wrap {
+  .theme-switcher {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 1px solid $border-color;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1.2em;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    .theme-switcher__icon {
+      display: block;
+      line-height: 1;
+      font-size: 1em;
+    }
+    
+    &:hover {
+      background-color: $lighter-gray;
+      transform: translateY(-50%) scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba($info-color, 0.3);
+    }
 
-  @include breakpoint($small) {
-    width: 35px;
-    height: 35px;
-    font-size: 1em;
-    right: 5px;
+    &:active {
+      transform: translateY(-50%) scale(0.95);
+    }
+
+    @include breakpoint($small) {
+      width: 38px;
+      height: 38px;
+      font-size: 1em;
+      right: 8px;
+    }
   }
 }
 

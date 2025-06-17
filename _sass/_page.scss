@@ -561,22 +561,33 @@
   .masthead {
     background-color: $dark-card-background;
     border-bottom-color: $dark-border-color;
+
+    .theme-switcher {
+      border-color: $dark-border-color;
+      color: $dark-text-color;
+      background: transparent !important;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      
+      &:hover {
+        background-color: $dark-border-color !important;
+        transform: translateY(-50%) scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 3px rgba(#64b5f6, 0.3);
+      }
+
+      &:active {
+        transform: translateY(-50%) scale(0.95);
+      }
+    }
   }
 
   .greedy-nav {
     background-color: $dark-card-background;
-    
-    .theme-toggle {
-      border-color: $dark-border-color;
-      color: $dark-text-color;
-      
-      &:hover {
-        background-color: $dark-border-color;
-        transform: translateY(-50%) scale(1.1);
-      }
-    }
 
-    button:not(.theme-toggle) {
+    button {
       background-color: $dark-border-color;
     }
 
