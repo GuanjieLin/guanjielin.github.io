@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Guanjie LIN"
-description              : "Ph.D. Student in Computer Science at University of Massachusetts Boston"
+description              : 
 repository               : "cook1e-0707/Guanjie_LIN.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -22,10 +22,10 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Guanjie LIN"
-  avatar           : "images/Guanjie_LIN.jpg"
-  bio              : "Ph.D. Student in Computer Science at University of Massachusetts Boston"
+  avatar           : "images/Guanjie_photo.jpg"
+  bio              : "Ph.D. Student"
   location         : "Boston, United States"
-  employer         :
+  employer         : "University of Massachusetts Boston"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=SCHOLAR_ID&user=bdHnK-0AAAAJ"
   email            : "Guanjie.Lin001@umb.edu"
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "cook1e-0707" # e.g., "github username"
   google_plus      :
   keybase          :
   instagram        :
