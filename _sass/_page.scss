@@ -50,14 +50,14 @@
 
 .page__content {
   #about-me{
-    margin-top: -10em;
+    margin-top: $about-me-margin-top;
       &:before { 
         content: ''; 
         display: block; 
         position: relative; 
         width: 0; 
-        height: 10em; 
-        margin-top: -10em;
+        height: abs($about-me-margin-top); 
+        margin-top: $about-me-margin-top;
     }
   }
   h1 {
@@ -409,4 +409,276 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+
+/*
+   Timeline Experience Section
+   ========================================================================== */
+
+.timeline-container {
+  position: relative;
+  margin: 2em 0;
+  padding: 0;
+}
+
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 25px;
+    height: 100%;
+    width: 2px;
+    background: $info-color;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2em;
+    padding-left: 70px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 8px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: $info-color;
+      border: 3px solid $background-color;
+      z-index: 1;
+    }
+
+    .timeline-content {
+      background: $background-color;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      padding: 1.5em;
+      box-shadow: $box-shadow;
+      transition: $global-transition;
+
+      &:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+      }
+
+      .timeline-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 1em;
+        flex-wrap: wrap;
+
+        .timeline-title {
+          font-size: $type-size-4;
+          font-weight: bold;
+          color: $text-color;
+          margin: 0;
+          flex: 1;
+        }
+
+        .timeline-date {
+          font-size: $type-size-6;
+          color: $gray;
+          white-space: nowrap;
+          margin-left: 1em;
+        }
+      }
+
+      .timeline-company {
+        font-size: $type-size-5;
+        font-weight: 600;
+        color: $info-color;
+        margin-bottom: 0.5em;
+        
+        a {
+          color: $info-color;
+          text-decoration: none;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .timeline-location {
+        font-size: $type-size-6;
+        color: $gray;
+        margin-bottom: 1em;
+        font-style: italic;
+      }
+
+      .timeline-description {
+        font-size: $type-size-6;
+        line-height: 1.6;
+        color: $text-color;
+        
+        p {
+          margin-bottom: 0.5em;
+          
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Responsive Timeline */
+@include breakpoint($small) {
+  .timeline {
+    &:before {
+      left: 15px;
+    }
+
+    .timeline-item {
+      padding-left: 50px;
+
+      &:before {
+        left: 10px;
+      }
+    }
+  }
+}
+
+/*
+   Dark Theme Support
+   ========================================================================== */
+
+[data-theme="dark"] {
+  body {
+    background-color: $dark-background-color;
+    color: $dark-text-color;
+  }
+
+  .masthead {
+    background-color: $dark-card-background;
+    border-bottom-color: $dark-border-color;
+    
+    .theme-toggle {
+      border-color: $dark-border-color;
+      color: $dark-text-color;
+      
+      &:hover {
+        background-color: $dark-border-color;
+      }
+    }
+  }
+
+  .page__content {
+    color: $dark-text-color;
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $dark-text-color;
+      border-bottom-color: $dark-border-color;
+    }
+
+    a {
+      color: #64b5f6;
+
+      &:hover {
+        color: #90caf9;
+      }
+    }
+
+    code {
+      background-color: $dark-code-background;
+      color: $dark-text-color;
+    }
+
+    blockquote {
+      background-color: $dark-card-background;
+      border-left-color: #64b5f6;
+    }
+  }
+
+  .timeline {
+    &:before {
+      background: #64b5f6;
+    }
+
+    .timeline-item {
+      &:before {
+        background: #64b5f6;
+        border-color: $dark-background-color;
+      }
+
+      .timeline-content {
+        background: $dark-card-background;
+        border-color: $dark-border-color;
+        color: $dark-text-color;
+
+        &:hover {
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .timeline-title {
+          color: $dark-text-color;
+        }
+
+        .timeline-company a {
+          color: #64b5f6;
+
+          &:hover {
+            color: #90caf9;
+          }
+        }
+
+        .timeline-location {
+          color: #b0b0b0;
+        }
+
+        .timeline-description {
+          color: $dark-text-color;
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    background-color: $dark-card-background;
+    
+    .author__avatar img {
+      border-color: $dark-border-color;
+    }
+    
+    .author__content {
+      color: $dark-text-color;
+    }
+    
+    .author__urls {
+      a {
+        color: $dark-text-color;
+        
+        &:hover {
+          color: #64b5f6;
+        }
+      }
+    }
+  }
+
+  #main {
+    background-color: $dark-background-color;
+  }
+
+  table {
+    background-color: $dark-card-background;
+    border-color: $dark-border-color;
+    
+    th, td {
+      border-color: $dark-border-color;
+      color: $dark-text-color;
+    }
+    
+    th {
+      background-color: $dark-border-color;
+    }
+  }
 }

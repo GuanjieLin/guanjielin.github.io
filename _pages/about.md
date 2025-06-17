@@ -17,9 +17,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
+
+
+
+
 I am Guanjie Lin, currently a first-year PhD student in Computer Science at the University of Massachusetts Boston (UMass Boston), under the mentorship of Prof. Yinxin Wan. I received my Bachelor of Engineering degree in Computer Science from Foshan University(China) in June 2024. Previously, I served as a Research Intern at the Shenzhen Key Lab for ICN and Blockchain Technologies (ICNLAB), Shenzhen Graduate School, Peking University, mentored by Prof. Kai Lei from December 2021 through most of my undergraduate studies.
 
-My primary research interests include Future Internet architectures, blockchain technology, software security related to Large Language Models (LLMs), and network systems.
+My primary research interests include Future Internet architectures, Blockchain, and Security & Network related to Large Language Models (LLMs).
 
 
 # 🔥 News
@@ -53,15 +57,42 @@ Kai Lei, **Guanjie Lin**, Meimei Zhang, Keke Li, Qi Li, Xiaojun Jing, Peng Wang
 
   Foshan University
 
-# 💻 EXPERIENCE
+# 💻 Experience
 
-| Computer Science Department, University of Massachusetts Boston | Jan 2025 – Now        |
-| ------------------------------------------------------------ | --------------------- |
-| **Teaching Assistant & Research Assistant**                  | Boston, United States |
-
-| Shenzhen Key Lab for ICN and Blockchain Technologies([ICNLAB](http://www.icnlab.cn/)), Shenzhen Graduate School, Peking University | Dec 2021 – Sept 2024 |
-| ------------------------------------------------------------ | -------------------- |
-| **Research Intern**                                          | Shenzhen, China      |
+<div class="timeline-container">
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <div class="timeline-header">
+        <h3 class="timeline-title">Teaching Assistant & Research Assistant</h3>
+        <span class="timeline-date">Jan 2025 – Now</span>
+      </div>
+      <div class="timeline-company">Computer Science Department, University of Massachusetts Boston</div>
+      <div class="timeline-location">Boston, United States</div>
+      <div class="timeline-description">
+        <p>Incoming Intern..</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <div class="timeline-header">
+        <h3 class="timeline-title">Research Intern</h3>
+        <span class="timeline-date">Dec 2021 – Sept 2024</span>
+      </div>
+      <div class="timeline-company">
+        <a href="http://www.icnlab.cn/">Shenzhen Key Lab for ICN and Blockchain Technologies (ICNLAB)</a>, Shenzhen Graduate School, Peking University
+      </div>
+      <div class="timeline-location">Shenzhen, China</div>
+      <div class="timeline-description">
+        <p>Conducted research on blockchain technologies, ICN architectures, and network security under the mentorship of Prof. Kai Lei.</p>
+        <p>Contributed to multiple research projects resulting in publications in top-tier conferences and journals.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 
 

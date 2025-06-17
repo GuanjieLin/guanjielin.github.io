@@ -1,4 +1,36 @@
 <script src="assets/js/main.min.js"></script>
 
+<!-- Theme Toggle Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeIcon = document.querySelector('.theme-toggle__icon');
+  const html = document.documentElement;
+  
+  // Check for saved theme preference or default to 'light'
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  
+  // Apply the current theme
+  html.setAttribute('data-theme', currentTheme);
+  updateIcon(currentTheme);
+  
+  // Theme toggle event listener
+  themeToggle?.addEventListener('click', function() {
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateIcon(newTheme);
+  });
+  
+  function updateIcon(theme) {
+    if (themeIcon) {
+      themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+  }
+});
+</script>
+
 {% include analytics.html %}
 {% include fetch_google_scholar_stats.html %}
