@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Guanjie LIN"
-description              : "Ph.D. Student"
+description              : "University of Massachusetts Boston"
 repository               : "cook1e-0707/guanjielin.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Guanjie LIN"
   avatar           : "images/Guanjie_photo.jpg"
-  bio              : "University of Massachusetts Boston"
+  bio              : "Ph.D. Student"
   location         : "Boston, United States"
   employer         : 
   pubmed           : 
