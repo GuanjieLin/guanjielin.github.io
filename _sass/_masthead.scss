@@ -61,4 +61,29 @@
   }
 }
 
+/* Theme toggle button */
+.theme-toggle {
+  background: none;
+  border: 1px solid $border-color;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: $global-transition;
+  font-size: 1.2em;
+  
+  &:hover {
+    background-color: $lighter-gray;
+    transform: scale(1.1);
+  }
+  
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($info-color, 0.3);
+  }
+}
+
 
