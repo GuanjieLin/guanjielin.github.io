@@ -27,11 +27,11 @@ My primary research interests include Future Internet architectures, Blockchain,
 # 🎓 Educations
 - **Ph.D.** in Computer Science💻  Jan 2025 - Now
 
-  University of Massachusetts Boston
+  University of Massachusetts Boston, Boston, United States
 
 - **B.E.** in Computer Science💻  Sept 2020 - June 2024
 
-  Foshan University
+  Foshan University, Foshan, China
 
 # 🔥 News
 - *2025.01*: &nbsp;🎉🎉 I am excited to join UMass Boston and begin my PhD journey, working closely with Prof. Yinxin Wan. 
