@@ -14,7 +14,8 @@ var breaks = [];
 
 function updateNav() {
 
-  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
+  var themeToggleWidth = $('#theme-toggle').outerWidth() || 50; // Account for theme toggle button
+  var availableSpace = $btn.hasClass('hidden') ? $nav.width() - themeToggleWidth - 10 : $nav.width() - $btn.width() - themeToggleWidth - 40;
 
   // The visible list is overflowing the nav
   if($vlinks.width() > availableSpace) {

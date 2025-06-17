@@ -561,6 +561,10 @@
   .masthead {
     background-color: $dark-card-background;
     border-bottom-color: $dark-border-color;
+  }
+
+  .greedy-nav {
+    background-color: $dark-card-background;
     
     .theme-toggle {
       border-color: $dark-border-color;
@@ -568,6 +572,19 @@
       
       &:hover {
         background-color: $dark-border-color;
+        transform: translateY(-50%) scale(1.1);
+      }
+    }
+
+    button:not(.theme-toggle) {
+      background-color: $dark-border-color;
+    }
+
+    a {
+      color: $dark-text-color;
+      
+      &:hover {
+        color: #64b5f6;
       }
     }
   }
