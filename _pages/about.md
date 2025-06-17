@@ -26,12 +26,12 @@ I am Guanjie Lin, currently a first-year PhD student in Computer Science at the 
 My primary research interests include Future Internet architectures, Blockchain, and Security & Network related to Large Language Models (LLMs).
 
 
-#  Educations
-- **Ph.D.** in Computer Science | Jan 2025 - Now
+# 🎓 Educations
+- **Ph.D.** in Computer Science  💻 Jan 2025 - Now
 
-  University of Massachusetts Boston
+  University of Massachusetts  💻 Boston
 
-- **B.E.** in Computer Science | Sept 2020 - June 2024
+- **B.E.** in Computer Science  Sept 2020 - June 2024
 
   Foshan University
 
@@ -40,14 +40,14 @@ My primary research interests include Future Internet architectures, Blockchain,
 
 
 
-# 💻 Experience
+# 💼 Experience
 
 <div class="timeline-container">
 <div class="timeline">
   <div class="timeline-item">
     <div class="timeline-content">
       <div class="timeline-header">
-        <h3 class="timeline-title">Teaching Assistant \& Research Assistant</h3>
+        <h3 class="timeline-title">Graduate Assistant</h3>
         <span class="timeline-date">Jan 2025 – Now</span>
       </div>
       <div class="timeline-company">Computer Science Department, University of Massachusetts Boston</div>
