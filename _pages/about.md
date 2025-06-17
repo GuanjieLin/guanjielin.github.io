@@ -19,19 +19,17 @@ redirect_from:
 
 
 
-
-
 I am Guanjie Lin, currently a first-year PhD student in Computer Science at the University of Massachusetts Boston (UMass Boston), under the mentorship of Prof. [Yinxin Wan](https://www.cs.umb.edu/~ywan/). I received my Bachelor of Engineering degree in Computer Science from Foshan University(China) in June 2024. Previously, I served as a Research Intern at the Shenzhen Key Lab for ICN and Blockchain Technologies (ICNLAB), Shenzhen Graduate School, Peking University, mentored by Prof. [Kai Lei](https://www.icnlab.cn/?page_id=6360) from December 2021 through most of my undergraduate studies.
 
 My primary research interests include Future Internet architectures, Blockchain, and Security & Network related to Large Language Models (LLMs).
 
 
 # 🎓 Educations
-- **Ph.D.** in Computer Science  💻 Jan 2025 - Now
+- **Ph.D.** in Computer Science💻  Jan 2025 - Now
 
-  University of Massachusetts  💻 Boston
+  University of Massachusetts Boston
 
-- **B.E.** in Computer Science  Sept 2020 - June 2024
+- **B.E.** in Computer Science💻  Sept 2020 - June 2024
 
   Foshan University
 
@@ -80,19 +78,19 @@ My primary research interests include Future Internet architectures, Blockchain,
 
 
 
-#### [Blockchain-based cooperative game bilateral matching architecture for shared storage](https://doi.org/10.1016/j.future.2024.04.016)
+- [Blockchain-based cooperative game bilateral matching architecture for shared storage](https://doi.org/10.1016/j.future.2024.04.016)
 
-**Guanjie Lin**, Mingyuan Zeng, Zhiguang Shan, Kaishun Wu, Guan Wang, Kai Lei
+  **Guanjie Lin**, Mingyuan Zeng, Zhiguang Shan, Kaishun Wu, Guan Wang, Kai Lei
 
-*Future Generation Computer Systems*
+  *Future Generation Computer Systems*
 
 
 
-#### [Measuring the consistency between data and control plane in SDN](https://ieeexplore.ieee.org/abstract/document/9854881/)
+- [Measuring the consistency between data and control plane in SDN](https://ieeexplore.ieee.org/abstract/document/9854881/)
 
-Kai Lei, **Guanjie Lin**, Meimei Zhang, Keke Li, Qi Li, Xiaojun Jing, Peng Wang
+  Kai Lei, **Guanjie Lin**, Meimei Zhang, Keke Li, Qi Li, Xiaojun Jing, Peng Wang
 
-*IEEE/ACM Transactions on Networking*
+  *IEEE/ACM Transactions on Networking*
 
 # 🎖 Honors and Awards
 
@@ -112,7 +110,7 @@ Kai Lei, **Guanjie Lin**, Meimei Zhang, Keke Li, Qi Li, Xiaojun Jing, Peng Wang
 
 <div style="height:100px"></div>
 
-
+<div style="height:100px"></div>
 
 
 ---
