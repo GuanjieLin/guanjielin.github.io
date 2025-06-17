@@ -82,7 +82,7 @@ My primary research interests include Future Internet architectures, Blockchain,
 
   **Guanjie Lin**, Mingyuan Zeng, Zhiguang Shan, Kaishun Wu, Guan Wang, Kai Lei
 
-  *Future Generation Computer Systems*
+  *Future Generation Computer Systems*, 2024
 
 
 
@@ -90,7 +90,9 @@ My primary research interests include Future Internet architectures, Blockchain,
 
   Kai Lei, **Guanjie Lin**, Meimei Zhang, Keke Li, Qi Li, Xiaojun Jing, Peng Wang
 
-  *IEEE/ACM Transactions on Networking*
+  *IEEE/ACM Transactions on Networking*, 2022
+
+
 
 # 🎖 Honors and Awards
 
@@ -103,14 +105,14 @@ My primary research interests include Future Internet architectures, Blockchain,
 
 
 
-<div style="height:100px"></div>
+<div style="height:300px"></div>
 
 
 
 
-<div style="height:100px"></div>
+<div style="height:300px"></div>
 
-<div style="height:100px"></div>
+<div style="height:300px"></div>
 
 
 ---
