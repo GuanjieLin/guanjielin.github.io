@@ -200,7 +200,7 @@
     color: #fff;
     cursor: pointer;
     z-index: 1000; // Ensure it's below theme switcher
-    min-width: 30px; // Ensure consistent width
+    min-width: 20px; // Ensure consistent width
     transition: background-color 0.2s ease;
     
     &:hover {
