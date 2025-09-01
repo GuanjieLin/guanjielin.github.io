@@ -19,7 +19,7 @@ redirect_from:
 
 # 🧩 About Me
 
-I am Guanjie Lin, currently a first-year PhD student in Computer Science at the University of Massachusetts Boston (UMass Boston), under the mentorship of Prof. [Yinxin Wan](https://www.cs.umb.edu/~ywan/). I received my Bachelor of Engineering degree in Computer Science from Foshan University(China) in June 2024. Previously, I served as a Research Intern at the Shenzhen Key Lab for ICN and Blockchain Technologies (ICNLAB), Shenzhen Graduate School, Peking University, mentored by Prof. [Kai Lei](https://www.icnlab.cn/?page_id=6360) from December 2021 through most of my undergraduate studies.
+I am Guanjie Lin, currently a first-year PhD student in Computer Science at the University of Massachusetts Boston (UMass Boston), under the mentorship of Prof. [Yinxin Wan](https://www.cs.umb.edu/~ywan/). I received my Bachelor of Engineering degree in Computer Science from Foshan University in June 2024. Previously, I served as a Research Intern at the Shenzhen Key Lab for ICN and Blockchain Technologies (ICNLAB), Shenzhen Graduate School, Peking University, mentored by Prof. [Kai Lei](https://www.icnlab.cn/?page_id=6360) from December 2021 through most of my undergraduate studies.
 
 My primary research interests include Future Internet architectures, Blockchain, and Computer Networks related to Large Language Models (LLMs).
 
@@ -27,11 +27,11 @@ My primary research interests include Future Internet architectures, Blockchain,
 # 🎓 Educations
 - **Ph.D.** in Computer Science💻  Jan 2025 - Now
 
-  University of Massachusetts Boston, Boston, United States
+  University of Massachusetts Boston, United States
 
 - **B.E.** in Computer Science💻  Sept 2020 - June 2024
 
-  Foshan University, Foshan, China
+  Foshan University, China
 
 # 🔥 News
 - *2025.01*: &nbsp;🎉🎉 I am excited to join UMass Boston and begin my PhD journey, working closely with Prof. Yinxin Wan. 
@@ -96,7 +96,7 @@ My primary research interests include Future Internet architectures, Blockchain,
 
 # 🎖 Honors and Awards
 
-- *2023.12* **🥈Silver Award at the 2023 Web 3.0 Innovation Hackathon** , Hong Kong, China;  Bonus: 30,000 HKD
+- *2023.12* **🥈Silver Award (Bonus: 30,000 HKD) at the 2023 Web 3.0 Innovation Hackathon**, Hong Kong, China
 
   
 
