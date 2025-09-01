@@ -48,7 +48,7 @@ My primary research interests include Future Internet architectures, Blockchain,
         <h3 class="timeline-title">Graduate Assistant</h3>
         <span class="timeline-date">Jan 2025 – Now</span>
       </div>
-      <div class="timeline-company">Computer Science Department, University of Massachusetts Boston</div>
+      <div class="timeline-company">Department of Computer Science, University of Massachusetts Boston</div>
       <div class="timeline-location">Boston, United States</div>
       <div class="timeline-description">
         <p></p>
