@@ -22,6 +22,11 @@
       <i class="fas fa-file-pdf"></i> PDF
     </a>
     {% endif %}
+    {% if pub.html_url and pub.html_url != "" %}
+    <a href="{{ pub.html_url | relative_url }}" class="pub-btn">
+      <i class="fas fa-globe"></i> HTML
+    </a>
+    {% endif %}
     {% if pub.url and pub.url != "" %}
     <a href="{{ pub.url }}" class="pub-btn">
       <i class="fas fa-link"></i> Link
