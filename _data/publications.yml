@@ -1,0 +1,73 @@
+# =============================================================================
+# Publications Data File
+# Add new papers here. Each entry supports:
+#   - id:       unique identifier (used for HTML anchors)
+#   - title:    paper title
+#   - authors:  author list (use <strong> to highlight your name)
+#   - venue:    publication venue
+#   - year:     publication year
+#   - badge:    optional badge text (e.g., acceptance rate)
+#   - url:      link to paper page (DOI, publisher, etc.)
+#   - pdf:      direct PDF link (leave empty if unavailable)
+#   - abstract: paper abstract (leave empty to hide the button)
+#   - bibtex:   BibTeX citation entry
+# =============================================================================
+
+- id: lin2026llmapi
+  title: "Behavioral Consistency and Transparency Analysis on Large Language Model API Gateways"
+  authors: "<strong>Guanjie Lin</strong>, Yinxin Wan, Shichao Pei, Ting Xu, Kuai Xu, Guoliang Xue"
+  venue: "ACM Internet Measurement Conference (IMC)"
+  year: 2026
+  badge: "Acceptance Rate: 10.38% (Cycle 1)"
+  url: ""
+  pdf: ""
+  code: ""
+  abstract: "Third-party Large Language Model (LLM) API gateways are rapidly emerging as unified access points to models offered by multiple vendors. However, the internal routing, caching, and billing policies of these gateways are largely undisclosed, leaving users with limited visibility into whether requests are served by the advertised models, whether responses remain faithful to upstream APIs, or whether invoices accurately reflect public pricing policies. To address this gap, we introduce VeriFlow, a lightweight black-box measurement framework for evaluating behavioral consistency and operational transparency in commercial LLM gateways. VeriFlow is designed to detect key misbehaviors—including model downgrading or switching, truncation, billing inaccuracies, and latency instability—by auditing gateways along four critical dimensions: response content analysis, multi-turn conversation performance, billing accuracy, and latency characteristics. Our measurements across 10 real-world commercial LLM API gateways reveal frequent gaps between expected and actual behaviors, including silent model substitutions, degraded memory retention, deviations from announced pricing, and substantial variation in latency stability across platforms."
+  bibtex: |
+    @inproceedings{lin2026llmapi,
+      title={Behavioral Consistency and Transparency Analysis on Large Language Model API Gateways},
+      author={Lin, Guanjie and Wan, Yinxin and Pei, Shichao and Xu, Ting and Xu, Kuai and Xue, Guoliang},
+      booktitle={Proceedings of the ACM Internet Measurement Conference (IMC)},
+      year={2026}
+    }
+
+- id: lin2024blockchain
+  title: "Blockchain-based cooperative game bilateral matching architecture for shared storage"
+  authors: "<strong>Guanjie Lin</strong>, Mingyuan Zeng, Zhiguang Shan, Kaishun Wu, Guan Wang, Kai Lei"
+  venue: "Future Generation Computer Systems (FGCS)"
+  year: 2024
+  url: "https://doi.org/10.1016/j.future.2024.04.016"
+  pdf: "files/paper_pdf/lin2024blockchain.pdf"
+  abstract: "The development of IPFS (InterPlanetary File System) and blockchain-based distributed storage projects has brought new possibilities to the field of storage. This paper proposes a blockchain-based cooperative game bilateral matching architecture as a novel approach for shared storage networks. In traditional competitive (non-cooperative) game models, the allocation of storage resources is centered around pricing, leading to a scenario where node providers often engage in price competition to obtain greater rewards, resulting in an imbalance in resource allocation for both buyers and sellers. In contrast, a distributed storage model based on cooperative game theory can better facilitate cooperation and resource sharing among node providers. This paper designs a storage resource allocation algorithm based on the stable marriage matching algorithm, demonstrating the stability of this algorithm as a matching solution. The paper also analyzes the differences between cooperative and non-cooperative game models in the market, and explores an equilibrium pricing mechanism guided by supply and demand. Furthermore, the paper introduces a trading mechanism for storage resources, including publication standards and matching schemes, ensuring efficient and trustworthy interaction between storage suppliers and demanders in a decentralized network centered around storage resources, thus enabling the circulation of the value of storage resources. A prototype of a blockchain-based shared storage trading system is implemented in this paper, utilizing bilateral matching for tradings. System evaluation and experimental testing are conducted, with results showing that the average utility value of the matching trading mechanism proposed in this paper outperforms the Double Auction-based matching model under any Poisson distribution (λ = 0.1, 0.2, 0.3, …, 0.9) conditions set in the experiments. Additionally, compared to the traditional approach of directly storing complete data content on the chain, the design proposed in this paper effectively reduces on-chain storage consumption by approximately 27.06%."
+  bibtex: |
+    @article{lin2024blockchain,
+      title={Blockchain-based cooperative game bilateral matching architecture for shared storage},
+      author={Lin, Guanjie and Zeng, Mingyuan and Shan, Zhiguang and Wu, Kaishun and Wang, Guan and Lei, Kai},
+      journal={Future Generation Computer Systems},
+      volume={158},
+      pages={122--137},
+      year={2024},
+      publisher={Elsevier},
+      doi={10.1016/j.future.2024.04.016}
+    }
+
+- id: lei2022sdn
+  title: "Measuring the consistency between data and control plane in SDN"
+  authors: "Kai Lei, <strong>Guanjie Lin</strong>, Meimei Zhang, Keke Li, Qi Li, Xiaojun Jing, Peng Wang"
+  venue: "IEEE/ACM Transactions on Networking (TON)"
+  year: 2022
+  url: "https://ieeexplore.ieee.org/abstract/document/9854881/"
+  pdf: "files/paper_pdf/lei2022sdn.pdf"
+  abstract: "Software Defined Networking (SDN) simplifies network control and management by decoupling the control plane from the data plane. However, the actual packet behaviors, conforming to the rules in the data plane flow tables, may violate the original policies in the controller due to the inconsistency between the data plane and control plane. To address this problem, we propose 2MVeri, a framework for measuring the consistency between the Data and Control plane, defined as the consistency between the control plane policies and data plane rules. 2MVeri uses a modules, a Bloom filter and a two-dimensional vector as a tag which is inserted in the packet header and is updated in each switch that the packet traverses. By exploiting path information compressed in the tag, 2MVeri can verify the consistency between the data and control plane. Moreover, when verification fails, 2MVeri is able to localize the faulty switch. Experimental results show that in the k = 4 fat tree topology, the verification accuracy of 2MVeri is as high as 100%. In addition, when the actual path is inconsistent with the expected path, 2MVeri can locate the wrong switch with an accuracy of 99.8%."
+  bibtex: |
+    @article{lei2022sdn,
+      title={Measuring the consistency between data and control plane in SDN},
+      author={Lei, Kai and Lin, Guanjie and Zhang, Meimei and Li, Keke and Li, Qi and Jing, Xiaojun and Wang, Peng},
+      journal={IEEE/ACM Transactions on Networking},
+      volume={31},
+      number={2},
+      pages={511--524},
+      year={2022},
+      publisher={IEEE},
+      doi={10.1109/TNET.2022.3193698}
+    }

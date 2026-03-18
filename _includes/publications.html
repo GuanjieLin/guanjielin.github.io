@@ -1,0 +1,97 @@
+<div class="pub-list">
+{% for pub in site.data.publications %}
+<div class="pub-item">
+  <div class="pub-title">
+    {% if pub.url and pub.url != "" %}
+      <a href="{{ pub.url }}">{{ pub.title }}</a>
+    {% else %}
+      {{ pub.title }}
+    {% endif %}
+    {% if pub.badge and pub.badge != "" %}
+      <span class="pub-badge">{{ pub.badge }}</span>
+    {% endif %}
+  </div>
+
+  <div class="pub-authors">{{ pub.authors }}</div>
+
+  <div class="pub-venue"><em>{{ pub.venue }}</em>, {{ pub.year }}</div>
+
+  <div class="pub-links">
+    {% if pub.pdf and pub.pdf != "" %}
+    <a href="{{ pub.pdf }}" class="pub-btn">
+      <i class="fas fa-file-pdf"></i> PDF
+    </a>
+    {% endif %}
+    {% if pub.url and pub.url != "" %}
+    <a href="{{ pub.url }}" class="pub-btn">
+      <i class="fas fa-link"></i> Link
+    </a>
+    {% endif %}
+    {% if pub.abstract and pub.abstract != "" %}
+    <button class="pub-btn" onclick="pubToggle('abstract-{{ pub.id }}', this)">
+      <i class="fas fa-align-left"></i> Abstract
+    </button>
+    {% endif %}
+    {% if pub.bibtex and pub.bibtex != "" %}
+    <button class="pub-btn" onclick="pubToggle('bibtex-{{ pub.id }}', this)">
+      <i class="fas fa-quote-right"></i> BibTeX
+    </button>
+    {% endif %}
+  </div>
+
+  {% if pub.abstract and pub.abstract != "" %}
+  <div class="pub-expand" id="abstract-{{ pub.id }}">
+    <div class="pub-expand-inner">
+      <p>{{ pub.abstract }}</p>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if pub.bibtex and pub.bibtex != "" %}
+  <div class="pub-expand" id="bibtex-{{ pub.id }}">
+    <div class="pub-expand-inner pub-bibtex-block">
+      <pre id="bibtex-text-{{ pub.id }}">{{ pub.bibtex | strip }}</pre>
+      <button class="pub-copy-btn" onclick="pubCopyBibtex('{{ pub.id }}', this)">
+        <i class="fas fa-copy"></i> Copy
+      </button>
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endfor %}
+</div>
+
+<script>
+function pubToggle(id, btn) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var isOpen = el.classList.contains('pub-expand-open');
+  // close all siblings in same pub-item
+  var parent = el.closest('.pub-item');
+  parent.querySelectorAll('.pub-expand-open').forEach(function(e) {
+    e.classList.remove('pub-expand-open');
+  });
+  parent.querySelectorAll('.pub-btn-active').forEach(function(b) {
+    b.classList.remove('pub-btn-active');
+  });
+  if (!isOpen) {
+    el.classList.add('pub-expand-open');
+    btn.classList.add('pub-btn-active');
+  }
+}
+
+function pubCopyBibtex(id, btn) {
+  var pre = document.getElementById('bibtex-text-' + id);
+  if (!pre) return;
+  var text = pre.textContent;
+  navigator.clipboard.writeText(text).then(function() {
+    var original = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+    btn.classList.add('pub-copy-success');
+    setTimeout(function() {
+      btn.innerHTML = original;
+      btn.classList.remove('pub-copy-success');
+    }, 2000);
+  });
+}
+</script>

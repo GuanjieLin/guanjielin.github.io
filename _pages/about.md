@@ -34,7 +34,8 @@ My primary research interests include Future Internet architectures, Blockchain,
   Foshan University, China
 
 # 🔥 News
-- *2025.01*: &nbsp;🎉🎉 I am excited to join UMass Boston and begin my PhD journey, working closely with Prof. Yinxin Wan. 
+- *2026.03*: &nbsp;🎉🎉 Our paper *"Behavioral Consistency and Transparency Analysis on Large Language Model API Gateways"* has been accepted by **IMC 2026** Cycle 1! (Acceptance Rate: **10.38%**)
+- *2025.01*: &nbsp; I am excited to join UMass Boston and begin my PhD journey, working closely with Prof. Yinxin Wan. 
 
 
 
@@ -76,21 +77,7 @@ My primary research interests include Future Internet architectures, Blockchain,
 
 # 📝 Publications 
 
-
-
-- [Blockchain-based cooperative game bilateral matching architecture for shared storage](https://doi.org/10.1016/j.future.2024.04.016)
-
-  **Guanjie Lin**, Mingyuan Zeng, Zhiguang Shan, Kaishun Wu, Guan Wang, Kai Lei
-
-  *Future Generation Computer Systems(FGCS)*, 2024
-
-
-
-- [Measuring the consistency between data and control plane in SDN](https://ieeexplore.ieee.org/abstract/document/9854881/)
-
-  Kai Lei, **Guanjie Lin**, Meimei Zhang, Keke Li, Qi Li, Xiaojun Jing, Peng Wang
-
-  *IEEE/ACM Transactions on Networking(TON)*, 2022
+{% include publications.html %}
 
 
 
