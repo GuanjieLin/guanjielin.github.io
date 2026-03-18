@@ -726,6 +726,23 @@
     }
   }
 
+  .social-icons {
+    .fa {
+      color: #b0b0b0;
+    }
+
+    .fa-github,
+    .fa-github-alt,
+    .fa-github-square {
+      color: #b0b0b0;
+    }
+
+    .fa-tumblr,
+    .fa-tumblr-square {
+      color: #7a9bbf;
+    }
+  }
+
   .pub-item {
     border-bottom-color: $dark-border-color;
   }
