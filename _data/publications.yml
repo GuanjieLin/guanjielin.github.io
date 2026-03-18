@@ -16,7 +16,7 @@
 - id: lin2026llmapi
   title: "Behavioral Consistency and Transparency Analysis on Large Language Model API Gateways"
   authors: "<strong>Guanjie Lin</strong>, Yinxin Wan, Shichao Pei, Ting Xu, Kuai Xu, Guoliang Xue"
-  venue: "ACM Internet Measurement Conference (IMC)"
+  venue: "Accepted by ACM Internet Measurement Conference (IMC)"
   year: 2026
   badge: "Acceptance Rate: 10.38% (Cycle 1)"
   url: ""
