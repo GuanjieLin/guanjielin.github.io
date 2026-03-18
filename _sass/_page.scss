@@ -671,25 +671,121 @@
   }
 
   .sidebar {
-    background-color: $dark-card-background;
-    
+    background-color: transparent;
+
+    @include breakpoint(max-width $large - 1px) {
+      background-color: $dark-card-background;
+      border-radius: 12px;
+      padding: 1em 1.2em;
+      margin: 0 0 1.5em 0;
+      border: 1px solid $dark-border-color;
+    }
+
     .author__avatar img {
       border-color: $dark-border-color;
     }
-    
+
     .author__content {
       color: $dark-text-color;
-    }
-    
-    .author__urls {
-      a {
+
+      .author__name {
         color: $dark-text-color;
-        
-        &:hover {
-          color: #64b5f6;
+      }
+
+      .author__bio {
+        color: #b0b0b0;
+      }
+    }
+
+    .author__urls-wrapper {
+      .author__urls {
+        a {
+          color: #ccc;
+
+          &:hover {
+            color: #64b5f6;
+          }
+        }
+
+        li {
+          color: #b0b0b0;
+        }
+
+        div {
+          color: #b0b0b0;
         }
       }
     }
+  }
+
+  .pub-item {
+    border-bottom-color: $dark-border-color;
+  }
+
+  .pub-title {
+    a {
+      color: $dark-text-color;
+
+      &:hover {
+        color: #64b5f6;
+      }
+    }
+
+    color: $dark-text-color;
+  }
+
+  .pub-authors {
+    color: #b8b8b8;
+  }
+
+  .pub-venue {
+    color: #999;
+  }
+
+  .pub-btn {
+    background: $dark-card-background;
+    border-color: $dark-border-color;
+    color: #ccc;
+
+    &:hover,
+    &.pub-btn-active {
+      background: #64b5f6;
+      border-color: #64b5f6;
+      color: #fff;
+    }
+  }
+
+  .pub-expand-inner {
+    background: $dark-card-background;
+    border-left-color: #64b5f6;
+    color: #ccc;
+
+    pre {
+      color: #ccc;
+      background: transparent;
+    }
+  }
+
+  .pub-copy-btn {
+    background: rgba(255,255,255,0.08);
+    border-color: $dark-border-color;
+    color: #bbb;
+
+    &:hover {
+      background: #64b5f6;
+      border-color: #64b5f6;
+      color: #fff;
+    }
+
+    &.pub-copy-success {
+      background: #27ae60;
+      border-color: #27ae60;
+      color: #fff;
+    }
+  }
+
+  .pub-badge {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
   }
 
   #main {
@@ -699,12 +795,12 @@
   table {
     background-color: $dark-card-background;
     border-color: $dark-border-color;
-    
+
     th, td {
       border-color: $dark-border-color;
       color: $dark-text-color;
     }
-    
+
     th {
       background-color: $dark-border-color;
     }

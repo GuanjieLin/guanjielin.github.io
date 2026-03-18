@@ -13,6 +13,14 @@
   @include clearfix();
   margin-bottom: 1em;
 
+  @include breakpoint(max-width $large - 1px) {
+    padding: 1em;
+    border-radius: 10px;
+    background: rgba(#000, 0.02);
+    max-width: 100%;
+    overflow: hidden;
+  }
+
   @include breakpoint($large) {
     @include span(2 of 12);
     opacity: 1;
@@ -76,14 +84,16 @@
   justify-content: flex-start;
   align-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  overflow: hidden;
 }
 
 .author__avatar {
   display: table-cell;
   vertical-align: top;
   width: 75px;
-  // set width only, for non-square avatars
-  // height: 36px;
+  flex-shrink: 0;
 
   @include breakpoint($large) {
     display: block;
@@ -189,6 +199,12 @@
   box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
 
+  [data-theme="dark"] & {
+    background: $dark-card-background;
+    border-color: $dark-border-color;
+    box-shadow: 0 0 15px rgba(#000, 0.5);
+  }
+
   @include breakpoint($large) {
     display: block;
     position: relative;
@@ -197,6 +213,12 @@
     border: 0;
     background: transparent;
     box-shadow: none;
+
+    [data-theme="dark"] & {
+      background: transparent;
+      box-shadow: none;
+      border: 0;
+    }
   }
 
   &:before {
@@ -210,6 +232,10 @@
     border-width: 0 10px 10px;
     border-color: $border-color transparent;
     z-index: 0;
+
+    [data-theme="dark"] & {
+      border-color: $dark-border-color transparent;
+    }
 
     @include breakpoint($large) {
       display: none;
@@ -227,6 +253,10 @@
     border-width: 0 10px 10px;
     border-color: #fff transparent;
     z-index: 1;
+
+    [data-theme="dark"] & {
+      border-color: $dark-card-background transparent;
+    }
 
     @include breakpoint($large) {
       display: none;
