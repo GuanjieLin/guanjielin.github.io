@@ -641,6 +641,7 @@ In this work, we use only public APIs of vendors and we do not capture user traf
 Table~\ref{tab:dcc-prompt} presents the complete Discrete Concept Composition (DCC) prompt template used for eliciting structured behavioral signatures.
 The design deliberately separates the reasoning process from the final result to facilitate the feature extraction described in Section~\ref{sec:content-analysis}.
 
+{% raw %}
 ```text
 \begin{table*}[t]
 \centering
@@ -685,6 +686,7 @@ Now, please apply this reasoning process and format to the following question.
 \end{tabular}
 \end{table*}
 ```
+{% endraw %}
 
 ### Sampling Protocol and Probe Suite
 
@@ -1034,6 +1036,7 @@ overall.  Bracketed values indicate the minimum and maximum latency
 observed (in seconds).  Lower CVs and tighter ranges indicate more
 stable service.
 
+{% raw %}
 ```text
 \begin{table}[H]
   \centering
@@ -1171,6 +1174,7 @@ stable service.
   }
 \end{table}
 ```
+{% endraw %}
 
 ## References
 
