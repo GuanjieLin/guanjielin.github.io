@@ -34,7 +34,7 @@ My primary research interests include Future Internet architectures, Blockchain,
   Foshan University, China
 
 # 🔥 News
-- *2026.03*: &nbsp;🎉🎉 Our paper *"Behavioral Consistency and Transparency Analysis on Large Language Model API Gateways"* has been accepted by **IMC 2026** Cycle 1! (Acceptance Rate: **10.38%**)
+- *2026.03*: &nbsp;🎉🎉 Our paper *"Behavioral Consistency and Transparency Analysis on Large Language Model API Gateways"* has been accepted by **IMC 2026** Cycle 1!
 - *2025.01*: &nbsp; I am excited to join UMass Boston and begin my PhD journey, working closely with Prof. Yinxin Wan. 
 
 
