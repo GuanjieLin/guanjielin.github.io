@@ -19,7 +19,7 @@ redirect_from:
 
 # 🧩 About Me
 
-I am Guanjie Lin, currently a first-year PhD student in Computer Science at the University of Massachusetts Boston (UMass Boston), under the mentorship of Prof. [Yinxin Wan](https://www.cs.umb.edu/~ywan/). I received my Bachelor of Engineering degree in Computer Science from Foshan University in June 2024. Previously, I served as a Research Intern at the Shenzhen Key Lab for ICN and Blockchain Technologies (ICNLAB), Shenzhen Graduate School, Peking University, mentored by Prof. [Kai Lei](https://www.icnlab.cn/?page_id=6360) from December 2021 through most of my undergraduate studies.
+I am Guanjie Lin, currently a PhD student in Computer Science at the University of Massachusetts Boston (UMass Boston), under the mentorship of Prof. [Yinxin Wan](https://www.cs.umb.edu/~ywan/). I received my Bachelor of Engineering degree in Computer Science from Foshan University in June 2024. Previously, I served as a Research Intern at the Shenzhen Key Lab for ICN and Blockchain Technologies (ICNLAB), Shenzhen Graduate School, Peking University, mentored by Prof. [Kai Lei](https://www.icnlab.cn/?page_id=6360) from December 2021 through most of my undergraduate studies.
 
 My primary research interests include Future Internet architectures, Blockchain, and Computer Networks related to Large Language Models (LLMs).
 
@@ -83,7 +83,7 @@ My primary research interests include Future Internet architectures, Blockchain,
 
 # 🎖 Honors and Awards
 
-- *2023.12* **🥈Silver Award (Bonus: 30,000 HKD) at the 2023 Web 3.0 Innovation Hackathon**, Hong Kong, China
+- *2023.12* **🥈Silver Award (Bonus: $30,000 HKD) at the 2023 Web 3.0 Innovation Hackathon**, Hong Kong, China
 
   
 
