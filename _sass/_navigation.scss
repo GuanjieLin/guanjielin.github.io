@@ -193,20 +193,26 @@
 
   button {
     position: absolute;
-    height: 100%;
+    top: 50%;
     right: 0;
-    padding: 0 0.5rem;
+    width: 44px;
+    height: 38px;
+    padding: 0;
     border: 0;
+    border-radius: $border-radius;
     outline: none;
     background-color: $info-color;
     color: #fff;
     cursor: pointer;
     z-index: 1000; // Ensure it's below theme switcher
     min-width: 10px; // Ensure consistent width
-    transition: background-color 0.2s ease;
+    transform: translateY(-50%);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
     
     &:hover {
       background-color: darken($info-color, 8%);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.14);
     }
     
     &:focus {
@@ -217,6 +223,11 @@
 
   .visible-links {
     display: table;
+    padding-right: 3.2rem;
+
+    @include breakpoint(max-width $medium - 1px) {
+      padding-right: 6rem;
+    }
 
     li {
       display: table-cell;
