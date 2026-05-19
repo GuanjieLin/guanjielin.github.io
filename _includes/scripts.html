@@ -31,6 +31,16 @@ document.addEventListener('DOMContentLoaded', function() {
       themeIcon.textContent = theme === 'dark' ? 'Light' : 'Dark';
     }
   }
+
+  document.querySelectorAll('.email-link').forEach(function(link) {
+    link.addEventListener('click', function() {
+      const user = link.getAttribute('data-email-user');
+      const domain = link.getAttribute('data-email-domain');
+      if (user && domain) {
+        window.location.href = 'mailto:' + user + '@' + domain;
+      }
+    });
+  });
 });
 </script>
 

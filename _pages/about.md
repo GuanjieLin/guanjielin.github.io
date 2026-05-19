@@ -16,15 +16,36 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <section class="home-hero" id="about-me">
+  <div class="hero-portrait">
+    <img src="{{ site.author.avatar | relative_url }}" alt="Guanjie Lin">
+  </div>
   <div class="hero-copy">
     <div class="home-eyebrow">PhD Student in Computer Science</div>
     <h1>Guanjie Lin</h1>
-    <p class="home-lede">Exploring future Internet architectures, blockchain systems, and networked infrastructure for large language model ecosystems.</p>
+    <p class="home-lede">Researching future Internet architectures, blockchain systems, and networked infrastructure for large language model ecosystems.</p>
+    <div class="hero-tags">
+      <span>University of Massachusetts Boston</span>
+      <span>Computer Networks</span>
+      <span>Blockchain</span>
+      <span>LLM Gateways</span>
+    </div>
   </div>
-  <div class="hero-meta">
-    <span>University of Massachusetts Boston</span>
-    <span>Computer Networks / Blockchain / LLM Gateways</span>
-    <a href="mailto:Guanjie.Lin001@umb.edu">Guanjie.Lin001@umb.edu</a>
+  <div class="hero-links" aria-label="External links">
+    <button class="hero-icon-link email-link" type="button" data-email-user="Guanjie.Lin001" data-email-domain="umb.edu" aria-label="Email">
+      <i class="fas fa-envelope" aria-hidden="true"></i>
+    </button>
+    <a class="hero-icon-link" href="https://github.com/{{ site.author.github }}" aria-label="GitHub">
+      <i class="fab fa-github" aria-hidden="true"></i>
+    </a>
+    <a class="hero-icon-link" href="https://www.linkedin.com/in/{{ site.author.linkedin }}" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+    </a>
+    <a class="hero-icon-link" href="{{ site.author.googlescholar }}" aria-label="Google Scholar">
+      <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+    </a>
+    <a class="hero-icon-link" href="{{ site.author.researchgate }}" aria-label="ResearchGate">
+      <i class="fab fa-researchgate" aria-hidden="true"></i>
+    </a>
   </div>
 </section>
 
