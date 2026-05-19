@@ -14,9 +14,11 @@
   margin-bottom: 1em;
 
   @include breakpoint(max-width $large - 1px) {
-    padding: 1em;
-    border-radius: 10px;
-    background: rgba(#000, 0.02);
+    padding: 1.1em;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    background: rgba($background-color, 0.78);
+    box-shadow: 0 12px 34px rgba(15, 23, 42, 0.06);
     max-width: 100%;
     overflow: hidden;
   }
@@ -105,10 +107,12 @@
     max-width: 175px;
     min-width: 75px;
     border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
 
     @include breakpoint($large) {
-      padding: 5px;
+      padding: 4px;
       border: 1px solid $border-color;
+      background: $background-color;
     }
   }
 }
@@ -131,6 +135,7 @@
 
 .author__name {
   margin: 0;
+  letter-spacing: -0.03em;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -148,6 +153,7 @@
 
 .author__bio {
   margin: 0;
+  color: $gray;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -190,13 +196,13 @@
   position: absolute;
   right: 0;
   margin-top: 15px;
-  padding: 10px;
+  padding: 12px;
   list-style-type: none;
   border: 1px solid $border-color;
   border-radius: $border-radius;
-  background: #fff;
+  background: $background-color;
   z-index: -1;
-  box-shadow: 0 0 10px rgba(#000, 0.25);
+  box-shadow: $box-shadow;
   cursor: default;
 
   [data-theme="dark"] & {
@@ -251,7 +257,7 @@
     width: 0;
     border-style: solid;
     border-width: 0 10px 10px;
-    border-color: #fff transparent;
+    border-color: $background-color transparent;
     z-index: 1;
 
     [data-theme="dark"] & {
@@ -274,11 +280,14 @@
     padding-top: 2px;
     padding-bottom: 2px;
     color: inherit;
-    font-size: $type-size-5;
+    font-size: 0.95em;
     text-decoration: none;
+    border-radius: 8px;
 
     &:hover {
-      text-decoration: underline;
+      color: $info-color;
+      background: $code-background-color;
+      text-decoration: none;
     }
   }
 }
