@@ -26,6 +26,10 @@
       max-width: $x-large;
     }
 
+    @include breakpoint(max-width $medium - 1px) {
+      padding-right: 6.5em;
+    }
+
     nav {
       z-index: 10;
     }
@@ -120,7 +124,7 @@
 
     // Mobile breakpoint: avoid overlap with hamburger menu
     @include breakpoint(max-width $medium - 1px) {
-      right: 56px; // Move left to avoid hamburger menu button (accounting for button padding)
+      right: 64px; // Keep clear of the greedy-nav hamburger hit area.
       width: 34px;
       height: 34px;
       font-size: 0.9em;
@@ -128,7 +132,7 @@
 
     // Very small screens: further adjustments for better spacing
     @include breakpoint(max-width $small - 1px) {
-      right: 50px;
+      right: 62px;
       width: 34px;
       height: 34px;
       font-size: 0.9em;
@@ -136,7 +140,7 @@
 
     // Extra small screens (phones in portrait)
     @include breakpoint(max-width 480px) {
-      right: 49px;
+      right: 60px;
       width: 32px;
       height: 32px;
       font-size: 0.85em;
