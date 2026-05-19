@@ -6,15 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const themeToggle = document.getElementById('theme-toggle');
   const themeIcon = document.querySelector('.theme-switcher__icon');
   const html = document.documentElement;
+  const themeColor = document.querySelector('meta[name="theme-color"]');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-  // Check for saved theme preference or default to 'light'
-  const currentTheme = localStorage.getItem('theme') || 'light';
+  const savedTheme = getSavedTheme();
+  const currentTheme = savedTheme || (systemPrefersDark.matches ? 'dark' : 'light');
 
-  // Apply the current theme
-  html.setAttribute('data-theme', currentTheme);
-  updateIcon(currentTheme);
+  applyTheme(currentTheme);
 
-  // Theme toggle event listener
   themeToggle?.addEventListener('click', function(e) {
     e.preventDefault();
     e.stopPropagation();
@@ -22,22 +21,46 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentTheme = html.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-    html.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateIcon(newTheme);
-
-    console.log('Theme switched to:', newTheme); // Debug log
+    saveTheme(newTheme);
+    applyTheme(newTheme);
   });
 
-  function updateIcon(theme) {
-    if (themeIcon) {
-      themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+  systemPrefersDark.addEventListener?.('change', function(event) {
+    if (!getSavedTheme()) {
+      applyTheme(event.matches ? 'dark' : 'light');
+    }
+  });
+
+  function getSavedTheme() {
+    try {
+      return localStorage.getItem('theme');
+    } catch (error) {
+      return null;
     }
   }
 
-  // Debug: Log if theme toggle button exists
-  console.log('Theme toggle button found:', !!themeToggle);
-  console.log('Theme icon found:', !!themeIcon);
+  function saveTheme(theme) {
+    try {
+      localStorage.setItem('theme', theme);
+    } catch (error) {}
+  }
+
+  function applyTheme(theme) {
+    html.setAttribute('data-theme', theme);
+
+    if (themeIcon) {
+      themeIcon.textContent = theme === 'dark' ? '☀' : '☾';
+    }
+
+    if (themeToggle) {
+      themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+      themeToggle.setAttribute('title', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+
+    if (themeColor) {
+      themeColor.setAttribute('content', theme === 'dark' ? '#111315' : '#fafaf8');
+    }
+  }
 });
 </script>
 
