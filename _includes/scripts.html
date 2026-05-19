@@ -6,38 +6,31 @@ document.addEventListener('DOMContentLoaded', function() {
   const themeToggle = document.getElementById('theme-toggle');
   const themeIcon = document.querySelector('.theme-switcher__icon');
   const html = document.documentElement;
-  
-  // Check for saved theme preference or default to 'light'
-  const currentTheme = localStorage.getItem('theme') || 'light';
-  
-  // Apply the current theme
+
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const currentTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+
   html.setAttribute('data-theme', currentTheme);
   updateIcon(currentTheme);
-  
-  // Theme toggle event listener
+
   themeToggle?.addEventListener('click', function(e) {
     e.preventDefault();
     e.stopPropagation();
-    
+
     const currentTheme = html.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
+
     html.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     updateIcon(newTheme);
-    
-    console.log('Theme switched to:', newTheme); // Debug log
   });
-  
+
   function updateIcon(theme) {
     if (themeIcon) {
-      themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+      themeIcon.textContent = theme === 'dark' ? 'Light' : 'Dark';
     }
   }
-  
-  // Debug: Log if theme toggle button exists
-  console.log('Theme toggle button found:', !!themeToggle);
-  console.log('Theme icon found:', !!themeIcon);
 });
 </script>
 
