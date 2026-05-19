@@ -2,7 +2,7 @@
 permalink: /
 title: "Guanjie LIN"
 excerpt: ""
-author_profile: true
+author_profile: false
 redirect_from:
   - /about/
   - /about.html
@@ -15,15 +15,16 @@ redirect_from:
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
-<span class='anchor' id='about-me'></span>
-
-<section class="home-hero">
-  <div class="home-eyebrow">PhD Student in Computer Science</div>
-  <h1>Guanjie Lin</h1>
-  <p class="home-lede">I study future Internet architectures, blockchain systems, and computer networks for large language model ecosystems.</p>
-  <div class="home-actions">
-    <a href="#publications" class="home-button home-button-primary">View Publications</a>
-    <a href="mailto:Guanjie.Lin001@umb.edu" class="home-button">Contact</a>
+<section class="home-hero" id="about-me">
+  <div class="hero-copy">
+    <div class="home-eyebrow">PhD Student in Computer Science</div>
+    <h1>Guanjie Lin</h1>
+    <p class="home-lede">Exploring future Internet architectures, blockchain systems, and networked infrastructure for large language model ecosystems.</p>
+  </div>
+  <div class="hero-meta">
+    <span>University of Massachusetts Boston</span>
+    <span>Computer Networks / Blockchain / LLM Gateways</span>
+    <a href="mailto:Guanjie.Lin001@umb.edu">Guanjie.Lin001@umb.edu</a>
   </div>
 </section>
 
@@ -34,28 +35,7 @@ redirect_from:
   <p>Before joining UMass Boston, I was a Research Intern at the Shenzhen Key Lab for ICN and Blockchain Technologies (ICNLAB), Shenzhen Graduate School, Peking University, mentored by Prof. <a href="https://www.icnlab.cn/?page_id=6360">Kai Lei</a>.</p>
 </section>
 
-<section class="home-section">
-  <div class="section-kicker">Research Focus</div>
-  <div class="research-grid">
-    <div class="research-card">
-      <span>01</span>
-      <h3>Future Internet</h3>
-      <p>Architectures and protocols for resilient, evolvable networked services.</p>
-    </div>
-    <div class="research-card">
-      <span>02</span>
-      <h3>Blockchain Systems</h3>
-      <p>Distributed trust, Web3 infrastructure, and network-level behavior.</p>
-    </div>
-    <div class="research-card">
-      <span>03</span>
-      <h3>LLM Networks</h3>
-      <p>Transparency, consistency, and connectivity in LLM API gateways.</p>
-    </div>
-  </div>
-</section>
-
-<section class="home-section compact-section">
+<section class="home-section compact-section" id="education">
   <div class="section-kicker">Education</div>
   <div class="info-list">
     <div class="info-item">
@@ -75,7 +55,7 @@ redirect_from:
   </div>
 </section>
 
-<section class="home-section compact-section">
+<section class="home-section compact-section" id="news">
   <div class="section-kicker">News</div>
   <div class="news-list">
     <div class="news-item">
@@ -134,7 +114,25 @@ redirect_from:
 
 </section>
 
-<section class="home-section compact-section">
+<section class="home-section compact-section" id="projects">
+  <div class="section-kicker">Projects</div>
+  <div class="project-item">
+    <div class="project-heading">
+      <h3>China Merchants Group Blockchain Platform (Phase 2)</h3>
+      <span>Sept 2022 - May 2023</span>
+    </div>
+    <p>In this project, ICNLAB acted as the technical consulting team and I participated in completing the information consultancy report on the construction and promotion of China Merchants Group Blockchain Platform (Phase 2). The project was led by China Merchants Group and jointly completed with Tencent Cloud and ICNLAB.</p>
+  </div>
+</section>
+
+<section class="home-section compact-section" id="services">
+  <div class="section-kicker">Services</div>
+  <div class="service-list">
+    <div class="service-item">STPC of ACM IMC 2026</div>
+  </div>
+</section>
+
+<section class="home-section compact-section" id="honors">
   <div class="section-kicker">Honors and Awards</div>
   <div class="award-card">
     <time>2023.12</time>
