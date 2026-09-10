@@ -51,23 +51,23 @@
       doi={10.1016/j.future.2024.04.016}
     }
 
-- id: lei2022sdn
+- id: lei2023sdn
   title: "Measuring the consistency between data and control plane in SDN"
   authors: "Kai Lei, <strong>Guanjie Lin</strong>, Meimei Zhang, Keke Li, Qi Li, Xiaojun Jing, Peng Wang"
   venue: "IEEE/ACM Transactions on Networking (TON)"
-  year: 2022
+  year: 2023
   url: "https://ieeexplore.ieee.org/abstract/document/9854881/"
-  pdf: "files/paper_pdf/lei2022sdn.pdf"
+  pdf: "files/paper_pdf/lei2023sdn.pdf"
   abstract: "Software Defined Networking (SDN) simplifies network control and management by decoupling the control plane from the data plane. However, the actual packet behaviors, conforming to the rules in the data plane flow tables, may violate the original policies in the controller due to the inconsistency between the data plane and control plane. To address this problem, we propose 2MVeri, a framework for measuring the consistency between the Data and Control plane, defined as the consistency between the control plane policies and data plane rules. 2MVeri uses a modules, a Bloom filter and a two-dimensional vector as a tag which is inserted in the packet header and is updated in each switch that the packet traverses. By exploiting path information compressed in the tag, 2MVeri can verify the consistency between the data and control plane. Moreover, when verification fails, 2MVeri is able to localize the faulty switch. Experimental results show that in the k = 4 fat tree topology, the verification accuracy of 2MVeri is as high as 100%. In addition, when the actual path is inconsistent with the expected path, 2MVeri can locate the wrong switch with an accuracy of 99.8%."
   bibtex: |
-    @article{lei2022sdn,
+    @article{lei2023sdn,
       title={Measuring the consistency between data and control plane in SDN},
       author={Lei, Kai and Lin, Guanjie and Zhang, Meimei and Li, Keke and Li, Qi and Jing, Xiaojun and Wang, Peng},
       journal={IEEE/ACM Transactions on Networking},
       volume={31},
       number={2},
       pages={511--524},
-      year={2022},
+      year={2023},
       publisher={IEEE},
       doi={10.1109/TNET.2022.3193698}
     }
